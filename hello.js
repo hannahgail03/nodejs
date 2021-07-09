@@ -6,12 +6,10 @@ const readline = require('readline').createInterface({
 readline.question('What is your name? ', name => {
     console.log(`Welcome ${name}`);
   	  readline.question('What is your age?', age => {
-        const allowed = "You're allowed to get a drivers license in Iowa";
-        const notAllowed = "You're not allowed to drive in Iowa";
         if(age<=16){
-        console.log(notAllowed); }
+        console.log("You're allowed to get a drivers license in Iowa") }
         else{
-        console.log(allowed);}
+        console.log("You're not allowed to drive in Iowa");}
         readline.close();
     });
 });
